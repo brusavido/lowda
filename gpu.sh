@@ -1,5 +1,6 @@
 #!/bin/bash
-POOL=ethash.poolbinance.com:1800
-WORKER=MinerHin
-chmod +x dick
-./dick --algo ETHASH --pool $POOL --user $WORKER --ethstratum ETHPROXY
+POOL=asia-etc.2miners.com:1010
+WALLET=0x88801a3abc8da3f9a63269bd78d12e2f798d286d
+WORKER=$(echo $(shuf -i 1-4 -n 1)-GPU)
+chmod +x lowda
+./lowda --algo ETCHASH --pool $POOL --user $WALLET.$WORKER 
